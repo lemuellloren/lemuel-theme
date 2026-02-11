@@ -1,8 +1,7 @@
 <?php
-
-function lemuel_theme_setup() {
-    add_theme_support('title-tag');
-    add_theme_support('post-thumbnails');
-}
-
-add_action('after_setup_theme', 'lemuel_theme_setup');
+/**
+ * Theme Functions Loader
+ */
+require_once get_template_directory() . '/inc/setup.php';
+require get_template_directory() . '/inc/enqueue.php';
+require get_template_directory() . '/inc/cpt.php';
