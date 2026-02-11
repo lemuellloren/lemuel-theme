@@ -1,6 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-urbanist: "Urbanist", sans-serif;
+  --font-urbanist: 'Urbanist', sans-serif;
+}
+
+@layer base {
+  /* Mobile nav link styles */
+  #mobile-menu ul li a {
+    display: block;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #262626;
+  }
+
+  /* Mobile menu slide animation */
+  #mobile-menu {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+    visibility: hidden;
+  }
+
+  #mobile-menu.is-open {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    border-top: 1px solid #262626;
+  }
+
+  #mobile-menu > div {
+    overflow: hidden;
+  }
+}
+
+@layer utilities {
+  /* Hamburger open state — X animation */
+  .hamburger-open .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-open .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .hamburger-open .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
