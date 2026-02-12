@@ -152,7 +152,7 @@ if (function_exists('acf_add_local_field_group')) :
                 'key'           => 'field_kv_2_icon',
                 'label'         => 'Value 2 Icon',
                 'name'          => 'kv_2_icon',
-                'type'          => 'image',
+                'type'          => 'image',                
                 'return_format' => 'array',
                 'preview_size'  => 'thumbnail',
             ],
@@ -208,6 +208,64 @@ if (function_exists('acf_add_local_field_group')) :
                 ],
             ],
         ],
+    ]);
+
+    /**
+     * CTA Section
+     */
+    acf_add_local_field_group([
+        'key'      => 'group_cta_section',
+        'title'    => 'CTA Section',
+        'fields'   => [
+            // Heading
+            [
+                'key'   => 'field_cta_heading',
+                'label' => 'Heading',
+                'name'  => 'cta_heading',
+                'type'  => 'text',
+            ],
+            // Description
+            [
+                'key'   => 'field_cta_description',
+                'label' => 'Description',
+                'name'  => 'cta_description',
+                'type'  => 'wysiwyg',
+            ],
+            // Button Label
+            [
+                'key'   => 'field_cta_button_label',
+                'label' => 'Button Label',
+                'name'  => 'cta_button_label',
+                'type'  => 'text',
+            ],
+            // Button Link
+            [
+                'key'   => 'field_cta_button_link',
+                'label' => 'Button Link',
+                'name'  => 'cta_button_link',
+                'type'  => 'link',
+            ],
+            // Background Image
+            [
+                'key'           => 'field_cta_background_image',
+                'label'         => 'Background Image',
+                'name'          => 'cta_background_image',
+                'type'          => 'image',
+                'instructions'  => 'Recommended size: at least 1920×1080 px. Will be used as section background.',
+                'return_format' => 'array',
+                'preview_size'  => 'medium',
+            ],
+        ],
+        'location' => [
+            [
+                [
+                    'param'    => 'post_type',
+                    'operator' => '==',
+                    'value'    => 'page',
+                ],
+            ],
+        ],
+        'active'   => true,
     ]);
 
 endif;

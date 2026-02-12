@@ -7,7 +7,7 @@ get_header();
 
     <?php get_template_part('template-parts/sections/hero'); ?>
     <?php get_template_part('template-parts/sections/key-value'); ?>
-
+    <?php get_template_part('template-parts/sections/cta'); ?>
     <!-- Additional sections can go here -->
 
 </main>
