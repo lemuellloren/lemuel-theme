@@ -5,7 +5,7 @@
   if (!btn || !menu) return;
 
   btn.addEventListener('click', function () {
-    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    const isOpen = menu.classList.contains('is-open');
 
     if (isOpen) {
       menu.classList.remove('is-open');
@@ -20,6 +20,7 @@
     }
   });
 
+  // Reset if screen is resized to desktop
   window.addEventListener('resize', function () {
     if (window.innerWidth >= 768) {
       menu.classList.remove('is-open');

@@ -14,13 +14,20 @@
     font-weight: 500;
     padding: 0.5rem 0;
     border-bottom: 1px solid #262626;
+    transition: color 0.3s ease;
   }
 
-  /* Mobile menu slide animation */
+  #mobile-menu ul li a:hover {
+    color: #703bf7;
+  }
+
+  /* Mobile menu slide animation using Grid trick */
   #mobile-menu {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.3s ease-in-out;
+    transition:
+      grid-template-rows 0.3s ease-in-out,
+      visibility 0.3s;
     visibility: hidden;
   }
 
@@ -52,6 +59,7 @@
   .rotating-text {
     animation: spin 12s linear infinite;
     transform-origin: center;
+    transform-box: fill-box; /* Ensures rotation is centered on the SVG itself */
   }
 
   @keyframes spin {
