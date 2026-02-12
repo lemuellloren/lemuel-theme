@@ -47,4 +47,19 @@
   .hamburger-open .hamburger-line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  /* Floating badge rotating text */
+  .rotating-text {
+    animation: spin 12s linear infinite;
+    transform-origin: center;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
