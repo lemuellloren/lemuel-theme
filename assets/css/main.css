@@ -801,6 +801,13 @@
       }
     }
   }
+  .hover\:bg-\[\#262626\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #262626;
+      }
+    }
+  }
   .hover\:bg-gray-800 {
     &:hover {
       @media (hover: hover) {
@@ -812,6 +819,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-purple-600);
+      }
+    }
+  }
+  .hover\:text-\[\#703BF7\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #703BF7;
       }
     }
   }
