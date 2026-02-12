@@ -34,7 +34,7 @@ $stats = [
 <div class="relative flex flex-col md:flex-row items-center w-full gap-12">
 
     <!-- LEFT COLUMN -->
-    <div class="flex flex-col justify-center flex-1 gap-6 w-full">
+    <div class="flex flex-col justify-center flex-1 gap-6 w-full px-6 md:px-[162px]">
 
         <!-- Mobile: Image with overlapping badge -->
         <div class="relative md:hidden w-full">
@@ -147,11 +147,11 @@ $stats = [
     </div>
 
     <!-- RIGHT COLUMN — Desktop only image -->
-    <div class="hidden md:block relative flex-1 bg-cover bg-center rounded-xl"
+    <div class="hidden md:block relative flex-1 bg-cover bg-center"
          style="background-image: url('<?php echo esc_url($hero_bg_url); ?>');">
         <img src="<?php echo esc_url($hero_image_url); ?>"
              alt="<?php echo esc_attr($hero_image_alt); ?>"
-             class="w-full h-auto object-cover rounded-xl">
+             class="w-full h-auto object-cover">
     </div>
 
 </div>

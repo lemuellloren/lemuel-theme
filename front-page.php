@@ -3,9 +3,10 @@
 get_header();
 ?>
 
-<main class="relative min-h-screen flex flex-col items-center px-6 md:px-[162px] gap-12 bg-black text-white">
+<main class="relative min-h-screen flex flex-col items-center  bg-black text-white">
 
     <?php get_template_part('template-parts/sections/hero'); ?>
+    <?php get_template_part('template-parts/sections/key-value'); ?>
 
     <!-- Additional sections can go here -->
 
