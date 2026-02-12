@@ -107,7 +107,7 @@ $stats = [
         <?php endif; ?>
 
         <!-- Stats Boxes -->
-        <div class="grid grid-cols-2 md:flex gap-3 md:gap-5 w-full my-4 md:m-12">
+        <div class="grid grid-cols-2 md:flex gap-3 md:gap-5 w-full my-4">
             <?php foreach ( $stats as $index => $stat ) : ?>
                 <?php if ( $stat['value'] || $stat['label'] ) : ?>
                 <div class="flex flex-col items-center md:items-start p-4 md:p-6 bg-[#1A1A1A] md:bg-gray-900 border border-[#262626] md:border-gray-800 rounded-xl
