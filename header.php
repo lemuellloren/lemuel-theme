@@ -8,7 +8,7 @@
 
 <body <?php body_class('font-urbanist'); ?>>
 
-  <header class="relative w-full bg-[#1A1A1A]">
+  <header class="sticky top-0 z-50 w-full bg-[#1A1A1A] border-b border-[#262626]">
     <div class="flex py-5 px-4 md:px-[162px] justify-between items-center">
 
       <div class="flex justify-center items-center gap-2.5 w-40 h-12">

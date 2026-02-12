@@ -8,6 +8,7 @@ function lemuel_theme_setup() {
 
     register_nav_menus([
         'primary' => __('Primary Menu', 'lemuel'),
+        'footer'  => __('Footer Menu', 'lemuel'), 
     ]);
 }
 
